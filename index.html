@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- BOOTSTRAP 5.3 CDN -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+			crossorigin="anonymous"
+		></script>
+		<!-- css y js propios -->
+		<link rel="stylesheet" href="./assets/css/styles.css" />
+		<script defer src="./assets/js/index.js"></script>
+		<title>SimplyMail</title>
+	</head>
+	<body>
+		<main
+			class="min-vh-100 d-flex flex-column justify-content-center bg-body-secondary"
+		>
+			<!-- Formulario Correo -->
+			<div class="row justify-content-center">
+				<div class="col-6">
+					<form
+						id="formCorreo"
+						class="border border-2 border-secondary-subtle rounded shadow p-4"
+					>
+						<div class="d-flex align-items-center mb-1">
+							<label class="form-label text-secondary h6 mb-0" for="inputPara"
+								>PARA:</label
+							>
+							<input
+								class="form-control bg-transparent border-0"
+								type="text"
+								placeholder="email destinatario"
+								id="inputPara"
+								name="inputPara"
+								required
+							/>
+						</div>
+						<div class="mb-1">
+							<input
+								class="form-control h1 text-uppercase fw-bold bg-transparent border-0"
+								type="text"
+								placeholder="titulo"
+								id="inputTitulo"
+								name="inputTitulo"
+							/>
+						</div>
+						<div class="mb-1">
+							<input
+								class="form-control bg-transparent border-0"
+								type="text"
+								placeholder="Mensaje"
+								id="inputMensaje"
+								name="inputMensaje"
+								required
+							/>
+						</div>
+						<div class="d-flex align-items-center mb-1">
+							<label class="form-label text-secondary h6 mb-0" for="inputPara"
+								>DE:</label
+							>
+							<input
+								class="form-control bg-transparent border-0"
+								type="text"
+								placeholder="email remitente"
+								id="inputDe"
+								name="inputDe"
+								required
+							/>
+						</div>
+						<!-- Listado CC's -->
+						<div class="row g-3 mb-4">
+							<h6 class="text-secondary">CC:</h6>
+							<div class="col-6">
+								<input
+									type="email"
+									class="email form-control bg-transparent border-0"
+									placeholder="emails"
+									value="tu@mail.com"
+								/>
+							</div>
+							<div class="col-6">
+								<input
+									type="email"
+									class="email form-control bg-transparent border-0"
+									placeholder="emails"
+								/>
+							</div>
+							<div class="col-6">
+								<input
+									type="email"
+									class="email form-control bg-transparent border-0"
+									placeholder="emails"
+								/>
+							</div>
+							<div class="col-6">
+								<input
+									type="email"
+									class="email form-control bg-transparent border-0"
+									placeholder="emails"
+								/>
+							</div>
+							<div class="col-6">
+								<input
+									type="email"
+									class="email form-control bg-transparent border-0"
+									placeholder="emails"
+								/>
+							</div>
+							<div class="col-6">
+								<input
+									type="email"
+									class="email form-control bg-transparent border-0"
+									placeholder="emails"
+								/>
+							</div>
+						</div>
+						<button type="submit" class="btn btn-primary rounded-pill px-4">
+							Enviar
+						</button>
+					</form>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
