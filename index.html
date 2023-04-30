@@ -22,22 +22,20 @@
 		<title>SimplyMail</title>
 	</head>
 	<body>
-		<main
-			class="min-vh-100 d-flex flex-column justify-content-center bg-body-secondary"
-		>
+		<main class="min-vh-100">
 			<!-- Formulario Correo -->
 			<div class="row justify-content-center">
 				<div class="col-6">
 					<form
 						id="formCorreo"
-						class="border border-2 border-secondary-subtle rounded shadow p-4"
+						class="bg-body-secondary border border-2 border-secondary-subtle shadow p-4"
 					>
 						<div class="d-flex align-items-center mb-1">
 							<label class="form-label text-secondary h6 mb-0" for="inputPara"
 								>PARA:</label
 							>
 							<input
-								class="form-control bg-transparent border-0"
+								class="form-control bg-transparent border-0 border-bottom border-1"
 								type="text"
 								placeholder="email destinatario"
 								id="inputPara"
@@ -47,7 +45,7 @@
 						</div>
 						<div class="mb-1">
 							<input
-								class="form-control h1 text-uppercase fw-bold bg-transparent border-0"
+								class="form-control h1 text-uppercase fw-bold bg-transparent border-0 border-bottom border-1"
 								type="text"
 								placeholder="titulo"
 								id="inputTitulo"
@@ -56,7 +54,7 @@
 						</div>
 						<div class="mb-1">
 							<input
-								class="form-control bg-transparent border-0"
+								class="form-control bg-transparent border-0 border-bottom border-1"
 								type="text"
 								placeholder="Mensaje"
 								id="inputMensaje"
@@ -69,7 +67,7 @@
 								>DE:</label
 							>
 							<input
-								class="form-control bg-transparent border-0"
+								class="form-control bg-transparent border-0 border-bottom border-1"
 								type="text"
 								placeholder="email remitente"
 								id="inputDe"
@@ -78,53 +76,53 @@
 							/>
 						</div>
 						<!-- Listado CC's -->
-						<div class="row g-3 mb-4">
-							<h6 class="text-secondary">CC:</h6>
-							<div class="col-6">
+						<div class="row g-3 mt-2 mb-4">
+							<h6 class="text-secondary mt-2 mb-0">CC:</h6>
+							<div class="col-6 mt-1">
 								<input
 									type="email"
-									class="email form-control bg-transparent border-0"
+									class="email form-control bg-transparent border-0 border-bottom border-1"
 									placeholder="emails"
 									value="tu@mail.com"
 								/>
 							</div>
-							<div class="col-6">
+							<div class="col-6 mt-1">
 								<input
 									type="email"
-									class="email form-control bg-transparent border-0"
+									class="email form-control bg-transparent border-0 border-bottom border-1"
 									placeholder="emails"
 								/>
 							</div>
-							<div class="col-6">
+							<div class="col-6 mt-1">
 								<input
 									type="email"
-									class="email form-control bg-transparent border-0"
+									class="email form-control bg-transparent border-0 border-bottom border-1"
 									placeholder="emails"
 								/>
 							</div>
-							<div class="col-6">
+							<div class="col-6 mt-1">
 								<input
 									type="email"
-									class="email form-control bg-transparent border-0"
+									class="email form-control bg-transparent border-0 border-bottom border-1"
 									placeholder="emails"
 								/>
 							</div>
-							<div class="col-6">
+							<div class="col-6 mt-1">
 								<input
 									type="email"
-									class="email form-control bg-transparent border-0"
+									class="email form-control bg-transparent border-0 border-bottom border-1"
 									placeholder="emails"
 								/>
 							</div>
-							<div class="col-6">
+							<div class="col-6 mt-1">
 								<input
 									type="email"
-									class="email form-control bg-transparent border-0"
+									class="email form-control bg-transparent border-0 border-bottom border-1"
 									placeholder="emails"
 								/>
 							</div>
 						</div>
-						<button type="submit" class="btn btn-primary rounded-pill px-4">
+						<button type="submit" class="btn btn-success rounded-pill px-4">
 							Enviar
 						</button>
 					</form>
